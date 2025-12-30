@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All Products | SooraStyle</title>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="Product.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- الهيدر الثابت -->
+  <header class="sticky-header">
+    <div class="header-tools">
+      <form action="search.html" method="GET" class="search-form">
+        <input type="text" name="q" placeholder="What are you looking for?" class="search-bar" required>
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
+
+      <div class="options">
+      
+
+        <!-- حالة الضيف -->
+        <a href="login.html" id="loginLink"><i class="fas fa-user"></i> Sign in / Register</a>
+        <!-- حالة المستخدم المسجل -->
+        <div id="userPanel" style="display:none;">
+          <span id="userName"><i class="fas fa-user-check"></i> </span>
+          <button id="logoutBtn" class="logout-btn" title="Logout"><i class="fas fa-sign-out-alt"></i></button>
+        </div>
+
+    
+<a href="cart.html" class="cart-link">
+  <i class="fas fa-shopping-cart"></i>
+  <span id="cartCount" class="cart-count">0</span>
+</a>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- خلفية جمالية -->
+  <div class="ambient-bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+  <div class="grid-overlay"></div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">SOORASEOUL</div>
+    <nav>
+      <a href="index.html" >Home</a>
+      <a href="products.html" class="active-link">All Products</a>
+  
+      <a href="aboutt.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- عنوان القسم -->
+  <section class="products-header">
+    <h1>Products</h1>
+  </section>
+
+  <!-- قائمة الماركات -->
+  <section class="brands-bar">
+    <div class="brand-logo">AXIS-Y</div>
+    <div class="brand-logo">Anua</div>
+    <div class="brand-logo">d'Alba</div>
+    <div class="brand-logo">Hanyu</div>
+    <div class="brand-logo">NeoGen</div>
+    <div class="brand-logo"> ROMAND</div>
+    <div class="brand-logo">Torriden</div>
+    <div class="brand-logo">Aestura</div>
+  </section>
+
+  <!-- أدوات الفلترة والترتيب -->
+  <section class="products-toolbar">
+ <div class="filter-buttons">
+  <button data-filter="price-asc">⬆️ السعر الأقل</button>
+  <button data-filter="price-desc">⬇️ السعر الأعلى</button>
+ 
+</div>
+
+
+  </section>
+
+ 
+
+    <section class="product-grid">
+
+
+        
+
+
+
+  <!-- منتج 1 -->
+  <div class="product-card sale" data-name="[AXIS-Y] Dark Spot Correcting Glow Cream 50ml" data-img="spot.webp">
+    <img src="spot.webp" alt="[AXIS-Y] Dark Spot Cream">
+    <div class="product-info">
+      <span class="category">Cream</span>
+      <h3>[AXIS-Y] Dark Spot Correcting Glow Cream 50ml</h3>
+      <span class="price">$27.00</span>
+    </div>
+    <button class="cart-icon"><i class="fas fa-cart-plus"></i></button>
+  </div>
+
+  <!-- منتج 2 -->
+  <div class="product-card" data-name="[Anua] PDRN Hyaluronic Capsule 100 Serum 30ml" data-img="seer.webp">
+    <img src="seer.webp" alt="[Anua] PDRN Hyaluronic Serum">
+    <div class="product-info">
+      <span class="category">Serum</span>
+      <h3>[Anua] PDRN Hyaluronic Capsule 100 Serum 30ml</h3>
+      <span class="price">$34.00</span>
+    </div>
+    <button class="cart-icon"><i class="fas fa-cart-plus"></i></button>
+  </div>
+
+  <!-- منتج 3 -->
+  <div class="product-card sale" data-name="[Anua] NIACINAMIDE 10% + TXA 4% Serum 30ml" data-img="anser.webp">
+    <img src="anser.webp" alt="[Anua] NIACINAMIDE Serum">
+    <div class="product-info">
+      <span class="category">Serum</span>
+      <h3>[Anua] NIACINAMIDE 10% + TXA 4% DARK SPOT CORRECTING SERUM 30ml</h3>
+      <span class="price"><del>$32.00</del> $24.00</span>
+      <span class="sale-tag">Sale</span>
+    </div>
+    <button class="cart-icon"><i class="fas fa-cart-plus"></i></button>
+  </div>
+
+  <!-- منتج 4 -->
+  <div class="product-card sale" data-name="[Hanyul] Pure Artemisia Watery Calming Fluid Emulsion 125ml" data-img="hy.png">
+    <img src="hy.png" alt="[Hanyul] Calming Fluid">
+    <div class="product-info">
+      <span class="category">Emulsion</span>
+      <h3>[Hanyul] Pure Artemisia Watery Calming Fluid Emulsion 125ml</h3>
+      <span class="price"><del>$30.00</del> $29.00</span>
+      <span class="sale-tag">Sale</span>
+    </div>
+    <button class="cart-icon"><i class="fas fa-cart-plus"></i></button>
+  </div>
+
+  <!-- منتج 5 -->
+  <div class="product-card" data-name="[Hanyul] Pure Artemisia Watery Calming Cream 55ml" data-img="55ml.webp">
+    <img src="55ml.webp" alt="[Hanyul] Calming Cream">
+    <div class="product-info">
+      <span class="category">Cream</span>
+      <h3>[Hanyul] Pure Artemisia Watery Calming Cream 55ml</h3>
+      <span class="price">$40.00</span>
+    </div>
+    <button class="cart-icon"><i class="fas fa-cart-plus"></i></button>
+  </div>
+</section>
+
+<section class="product-grid">
+  <!-- منتج 6 -->
+  <div class="product-card" data-name="[Torriden] DIVE IN Cleansing Foam 150ml" data-img="dd.png">
+    <img src="dd.png" alt="[Torriden] Cleansing Foam">
+    <div class="product-info">
+      <span class="category">Cleanser</span>
+      <h3>[Torriden] DIVE IN Low Molecular Hyaluronic Acid Cleansing Foam 150ml</h3>
+      <span class="price">$16.00</span>
+    </div>
+    <button class="cart-icon"><i class="fas fa-cart-plus"></i></button>
+  </div>
+
+  <!-- منتج 7 -->
+  <div class="product-card sale" data-name="[d'Alba] White Truffle Spray Serum 120ml" data-img="alba.png">
+    <img src="alba.png" alt="[d'Alba] Spray Serum">
+    <div class="product-info">
+      <span class="category">Serum</span>
+      <h3>[d'Alba] White Truffle First Aromatic Spray Serum 120ml</h3>
+      <span class="price"><del>$45.00</del> $40.00</span>
+      <span class="sale-tag">Sale</span>
+    </div>
+    <button class="cart-icon"><i class="fas fa-cart-plus"></i></button>
+  </div>
+
+  <!-- منتج 8 -->
+  <div class="product-card" data-name="[NeoGen] REAL CHARCOAL PAD 150ML (60 PADS)" data-img="neo.webp">
+    <img src="neo.webp" alt="[NeoGen] Charcoal Pad">
+    <div class="product-info">
+      <span class="category">Pad</span>
+      <h3>[NeoGen] DERMALOGY REAL CHARCOAL PAD 150ML (60 PADS)</h3>
+      <span class="price">$24.00</span>
+    </div>
+    <button class="cart-icon"><i class="fas fa-cart-plus"></i></button>
+  </div>
+
+  <!-- منتج 9 -->
+  <div class="product-card" data-name="[ROMAND] Better Than Cheek 4g # C01 Peach Chip" data-img="blush.png">
+    <img src="blush.png" alt="[ROMAND] Blusher">
+    <div class="product-info">
+      <span class="category">Blusher</span>
+      <h3>[ROMAND] Better Than Cheek 4g # C01 Peach Chip</h3>
+      <span class="price">$13.00</span>
+    </div>
+    <button class="cart-icon"><i class="fas fa-cart-plus"></i></button>
+  </div>
+
+  <!-- منتج 10 -->
+  <div class="product-card" data-name="[Aestura] Atobarrier 365 Cream 80ml" data-img="ato.webp">
+    <img src="ato.webp" alt="[Aestura] Cream">
+    <div class="product-info">
+      <span class="category">Cream</span>
+      <h3>[Aestura] Atobarrier 365 Cream 80ml</h3>
+      <span class="price">$40.00</span>
+    </div>
+    <button class="cart-icon"><i class="fas fa-cart-plus"></i></button>
+  </div>
+
+  <!-- منتج 11 -->
+  <div class="product-card" data-name="[AXIS-Y] Mugwort Sheet Mask 27ml" data-img="mask.webp">
+    <img src="mask.webp" alt="[AXIS-Y] Sheet Mask">
+    <div class="product-info">
+      <span class="category">Face Mask</span>
+      <h3>[AXIS-Y] Mugwort Green Vital Energy Complex Sheet Mask 27ml</h3>
+      <span class="price">$5.00</span>
+    </div>
+    <button class="cart-icon"><i class="fas fa-cart-plus"></i></button>
+  </div>
+</section>
+
+
+
+
+
+ <div id="cartModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <img id="modalImg" src="" alt="Product Image">
+    <h2 id="modalTitle"></h2>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" min="1" value="1">
+    <button id="addToCartBtn">Add to Cart</button>
+  </div>
+</div>
+
+
+  <footer>
+    <p>© 2025 SooraStyle</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

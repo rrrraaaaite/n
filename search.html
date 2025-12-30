@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Results - SOORASEOUL</title>
+  <link rel="stylesheet" href="base.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">SOORASEOUL</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">All Products</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="new-arrivals">
+  <div class="section-header">
+    <h2>Search Results</h2>
+  </div>
+  <div class="product-grid" id="results"></div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const params = new URLSearchParams(window.location.search);
+  const query = params.get("q")?.toLowerCase();
+
+  // منتجات تجريبية
+  const products = [
+    {name: "[AXIS-Y] Dark Spot Cream", category:"Cream", price:"$27.00"},
+    {name: "[Anua] Hyaluronic Serum", category:"Serum", price:"$34.00"},
+    {name: "[Hanyul] Calming Cream", category:"Cream", price:"$40.00"},
+  ];
+
+  const resultsDiv = document.getElementById("results");
+  const filtered = products.filter(p => p.name.toLowerCase().includes(query));
+
+  if (filtered.length > 0) {
+    filtered.forEach(p => {
+      const card = document.createElement("div");
+      card.className = "product-card";
+      card.innerHTML = `
+        <div class="product-info">
+          <span class="category">${p.category}</span>
+          <h3>${p.name}</h3>
+          <span class="price">${p.price}</span>
+        </div>
+      `;
+      resultsDiv.appendChild(card);
+    });
+  } else {
+    resultsDiv.innerHTML = "<p style='color:#fff'>No products found.</p>";
+  }
+});
+</script>
+
+</body>
+</html>

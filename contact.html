@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - SOORASEOUL</title>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="promo">
+    FREE SHIPPING ABOVE $120 ✨(3-5 Days) DHL/FedEx <br> Express From Korea
+  </div>
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-tiktok"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+  </div>
+</div>
+
+<!-- Header Tools -->
+<div class="header-tools">
+  <form action="search.html" method="GET" class="search-form">
+    <input type="text" name="q" placeholder="What are you looking for?" class="search-bar" required>
+    <button type="submit"><i class="fas fa-search"></i></button>
+  </form>
+
+  <div class="options">
+    <a href="login.html" id="loginLink"><i class="fas fa-user"></i> Sign in / Register</a>
+    <div id="userPanel" style="display:none;">
+      <span id="userName"><i class="fas fa-user-check"></i></span>
+      <button id="logoutBtn" class="logout-btn" title="Logout"><i class="fas fa-sign-out-alt"></i></button>
+    </div>
+    <a href="cart.html" class="cart-link">
+      <i class="fas fa-shopping-cart"></i>
+      <span id="cartCount" class="cart-count">0</span>
+    </a>
+  </div>
+</div>
+
+<!-- Ambient Background -->
+<div class="ambient-bg">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+</div>
+<div class="grid-overlay"></div>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="logo">SOORASEOUL</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">All Products</a>
+    <a href="aboutt.html">About Us</a>
+    <a href="contact.html" class="active-link">Contact</a>
+  </nav>
+</header>
+
+<!-- Contact Form -->
+<section class="contact">
+  <form action="#" method="POST">
+    <h2>Contact Us</h2>
+
+    <input type="text" name="name" placeholder="Name">
+    <input type="email" name="email" placeholder="Email *" required>
+    <input type="tel" name="phone" placeholder="Phone Number *" required>
+    <input type="text" name="order" placeholder="Order Number">
+    <input type="text" name="country" placeholder="Country">
+    <textarea name="message" placeholder="Your message"></textarea>
+
+    <button type="submit">Submit Now</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 SOORASEOUL. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

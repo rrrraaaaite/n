@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SOORASEOUL</title>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="promo">
+FREE SHIPPING ABOVE $120 ✨(3-5 Days) DHL/FedEx <br> Express From Korea</div>
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-tiktok"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+  </div>
+</div>
+<!-- Header Tools موحدة -->
+<div class="header-tools">
+  <form action="search.html" method="GET" class="search-form">
+    <input type="text" name="q" placeholder="What are you looking for?" class="search-bar" required>
+    <button type="submit"><i class="fas fa-search"></i></button>
+  </form>
+
+  <div class="options">
+
+
+    <!-- حالة الضيف -->
+    <a href="login.html" id="loginLink"><i class="fas fa-user"></i> Sign in / Register</a>
+    <!-- حالة المستخدم المسجل -->
+    <div id="userPanel" style="display:none;">
+      <span id="userName"><i class="fas fa-user-check"></i> </span>
+      <button id="logoutBtn" class="logout-btn" title="Logout"><i class="fas fa-sign-out-alt"></i></button>
+    </div>
+
+    
+<a href="cart.html" class="cart-link">
+  <i class="fas fa-shopping-cart"></i>
+  <span id="cartCount" class="cart-count">0</span>
+</a>
+
+  </div>
+</div>
+
+
+
+
+  <div class="ambient-bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+  <div class="grid-overlay"></div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">SOORASEOUL</div>
+    <nav>
+      <a href="index.html" class="active-link">Home</a>
+      <a href="products.html">All Products</a>
+    
+      <a href="aboutt.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+
+  <!-- Hero Section -->
+ <section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Gentle Korean hydration made for everyday skin.</h1>
+      <p> Radiance Feels Possible 🌸 </p>
+      <p style="color: rgb(177, 238, 238);">A simple swipe-and-serum ritual for busy women — smooth with pads, repair with serum, and glow confidently throughout the day.</p>
+      <button onclick="window.location.href='products.html'">Shop Now</button>
+    </div>
+    <div   class="image-container">
+      <img src="C:\Users\my-pc\Desktop\project\anua.webp" alt="Hero Image">
+    </div>
+  </div>
+</section>
+
+
+   
+  <script src="script.js">
+  </script>
+
+
+
+
+
+  <section class="new-arrivals">
+  <div class="section-header">
+    <h2>New Arrivals</h2>
+    <a href="Products.html" class="show-all">Show All</a>
+  </div>
+
+  <div class="product-grid">
+    <!-- منتج 1 -->
+    <div class="product-card">
+      <img src="C:\Users\my-pc\Desktop\project\spot.webp" alt="[AXIS-Y] Dark Spot Cream">
+      <div class="product-info">
+        <span class="category">Cream</span>
+        <h3>[AXIS-Y] Dark Spot Correcting Glow Cream 50ml</h3>
+        <span class="price">$27.00</span>
+      </div>
+    </div>
+
+    <!-- منتج 2 -->
+    <div class="product-card">
+      <img src="C:\Users\my-pc\Desktop\project\seer.webp" alt="[Anua] PDRN Hyaluronic Serum">
+      <div class="product-info">
+        <span class="category">Serum</span>
+        <h3>[Anua] PDRN Hyaluronic Capsule 100 Serum 30ml</h3>
+        <span class="price">$34.00</span>
+      </div>
+    </div>
+
+    <!-- منتج 3 - خصم -->
+    <div class="product-card sale">
+      <img src="C:\Users\my-pc\Desktop\project\anser.webp" alt="[Anua] NIACINAMIDE Serum">
+      <div class="product-info">
+        <span class="category">Serum</span>
+        <h3>[Anua] NIACINAMIDE 10% + TXA 4% DARK SPOT CORRECTING SERUM 30ml</h3>
+        <span class="price"><del>$32.00</del> $24.00</span>
+        <span class="sale-tag">Sale</span>
+      </div>
+    </div>
+
+    <!-- منتج 4 - خصم -->
+    <div class="product-card sale">
+      <img src="hy.png" alt="[Hanyul] Calming Fluid">
+      <div class="product-info">
+        <span class="category">Emulsion</span>
+        <h3>[Hanyul] Pure Artemisia Watery Calming Fluid Emulsion 125ml</h3>
+        <span class="price"><del>$30.00</del> $29.00</span>
+        <span class="sale-tag">Sale</span>
+      </div>
+    </div>
+
+    <!-- منتج 5 -->
+    <div class="product-card">
+      <img src="C:\Users\my-pc\Desktop\project\55ml.webp" alt="[Hanyul] Calming Cream">
+      <div class="product-info">
+        <span class="category">Cream</span>
+        <h3>[Hanyul] Pure Artemisia Watery Calming Cream 55ml</h3>
+        <span class="price">$40.00</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <section class="new-arrivals">
+  <div class="section-header">
+    <h2>Best Selling</h2>
+    <a href="Products.html" class="show-all">Show All</a>
+  </div>
+
+  <div class="product-grid">
+    <!-- منتج 1 -->
+    <div class="product-card">
+      <img src="dd.png" >
+      <div class="product-info">
+        <span class="category">Cleanser</span>
+        <h3>[Torriden] DIVE IN Low Molecular Hyaluronic Acid Cleansing Foam 150ml</h3>
+        <span class="price">$16.00</span>
+      </div>
+    </div>
+
+    <!-- منتج 2 -->
+    <div class="product-card">
+      <img src="alba.png" >
+      <div class="product-info">
+        <span class="category">Serum</span>
+        <h3>[d'Alba] White Truffle First Aromatic Spray Serum 120ml</h3>
+        <span class="price"><del>$45.00</del> $40.00</span>
+        <span class="sale-tag">Sale</span>
+      </div>
+    </div>
+
+    <!-- منتج 3 - خصم -->
+    <div class="product-card sale">
+      <img src="C:\Users\my-pc\Desktop\project\neo.webp" alt=>
+      <div class="product-info">
+        <span class="category">Pad</span>
+        <h3>[NeoGen] DERMALOGY REAL CHARCOAL PAD 150ML (60 PADS)</h3>
+        <span class="price"> $24.00</span>
+        
+      </div>
+    </div>
+
+    <!-- منتج 4 - خصم -->
+    <div class="product-card sale">
+      <img src="blush.png">
+      <div class="product-info">
+        <span class="category">Blusher</span>
+        <h3>[ROMAND] Better Than Cheek 4g # C01 Peach Chip</h3>
+        <span class="price"> $13.00</span>
+        
+      </div>
+    </div>
+
+    <!-- منتج 5 -->
+    <div class="product-card">
+      <img src="C:\Users\my-pc\Desktop\project\ato.webp">
+      <div class="product-info">
+        <span class="category">Cream</span>
+        <h3>[Aestura] Atobarrier 365 Cream 80ml</h3>
+        <span class="price">$40.00</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+ 
+  <!-- Footer -->                  
+  <footer> 
+    <p>© 2025 SOORASEOUL. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

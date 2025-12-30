@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register | SooraStyle</title>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">SooraStyle</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="collection.html">Collection</a>
+      <a href="about.html">About</a>
+      <a href="conact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Header Tools الموحدة -->
+  <div class="header-tools">
+    <form action="search.html" method="GET" class="search-form">
+      <input type="text" name="q" placeholder="What are you looking for?" class="search-bar" required>
+      <button type="submit"><i class="fas fa-search"></i></button>
+    </form>
+    <div class="options">
+      <select id="langSelect">
+        <option value="en">English</option>
+        <option value="ko">한국어</option>
+      </select>
+      <select id="currencySelect">
+        <option value="sgd">Singapore - SGD $</option>
+        <option value="usd">USA - USD $</option>
+      </select>
+      <a href="login.html" id="loginLink"><i class="fas fa-user"></i> Sign in / Register</a>
+      <div id="userPanel" style="display:none;">
+        <span id="userName"><i class="fas fa-user-check"></i> </span>
+        <button id="logoutBtn" class="logout-btn" title="Logout"><i class="fas fa-sign-out-alt"></i></button>
+      </div>
+      <a href="#"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+  </div>
+
+  <!-- Register Form -->
+  <section class="login-section">
+    <div class="login-box">
+      <h2><i class="fas fa-user-plus"></i> Create Account</h2>
+      <form id="registerForm">
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <input type="text" id="regName" placeholder="Full Name" required>
+        </div>
+        <div class="input-group">
+          <i class="fas fa-envelope"></i>
+          <input type="email" id="regEmail" placeholder="Email" required>
+        </div>
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input type="password" id="regPassword" placeholder="Password (min 6 chars)" required minlength="6">
+        </div>
+        <button type="submit">Register</button>
+        <p class="register-link">Already have an account? <a href="login.html">Login</a></p>
+      </form>
+      <p id="registerMsg" class="form-msg"></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 SooraStyle</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
